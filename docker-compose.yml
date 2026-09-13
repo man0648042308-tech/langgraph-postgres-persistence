@@ -1,0 +1,20 @@
+services:
+  postgres:
+    image: m.daocloud.io/docker.io/library/postgres:16-alpine
+    container_name: bank-homework-postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: "123456"
+      POSTGRES_DB: bank
+    ports:
+      - "5432:5432"
+    volumes:
+      - bank_homework_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d bank"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+
+volumes:
+  bank_homework_pgdata:
