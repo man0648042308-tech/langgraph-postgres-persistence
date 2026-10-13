@@ -1,7 +1,7 @@
 [project]
-name = "bankrs-day29-day30"
+name = "bankrs-"
 version = "0.1.0"
-description = "Day29/Day30 银行推荐系统、记忆与检查点综合作业"
+description = "/银行推荐系统、记忆与检查点综合作业"
 requires-python = ">=3.13"
 dependencies = [
     "langgraph>=1.2.0,<2",
@@ -19,3 +19,4 @@ dev = [
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "-q"
+
