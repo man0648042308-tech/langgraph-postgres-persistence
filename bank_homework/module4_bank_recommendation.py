@@ -90,7 +90,7 @@ def generate_mock_data() -> tuple[list[FinancialProduct], list[UserProfile]]:
     users = [
         UserProfile("U001", "张明", 35, "企业中层", 25000, 100000, RiskTolerance.MODERATE, ["子女教育储备", "资产稳健增值"], [ProductCategory.WEALTH, ProductCategory.BOND_FUND], ["P001"]),
         UserProfile("U002", "李芳", 28, "互联网工程师", 18000, 50000, RiskTolerance.BALANCED, ["购房首付积累"], [ProductCategory.HYBRID_FUND, ProductCategory.EQUITY_FUND], []),
-        UserProfile("U003", "王建国", 58, "退休教师", 8000, 200000, RiskTolerance.CONSERVATIVE, ["养老现金流", "资产保值"], [ProductCategory.DEPOSIT, ProductCategory.INSURANCE], ["P002", "P003"]),
+        UserProfile("U003", "王建国", 58, "退休评审者", 8000, 200000, RiskTolerance.CONSERVATIVE, ["养老现金流", "资产保值"], [ProductCategory.DEPOSIT, ProductCategory.INSURANCE], ["P002", "P003"]),
     ]
     return products, users
 
@@ -183,7 +183,7 @@ def create_bank_recommendation_agent():
             response = (
                 f"{profile['name']}您好，根据您的风险承受能力和可投资金额，为您推荐：\n"
                 + "\n".join(lines)
-                + "\n以上为教学演示，不构成真实投资建议。"
+                + "\n以上为功能演示，不构成真实投资建议。"
             )
         else:
             response = "暂未找到同时满足风险等级和起投金额要求的产品。"

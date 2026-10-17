@@ -1,7 +1,7 @@
 [project]
-name = "bankrs-"
+name = "bankrs-persistence"
 version = "0.1.0"
-description = "/银行推荐系统、记忆与检查点综合作业"
+description = "LangGraph 银行推荐系统、记忆与检查点项目"
 requires-python = ">=3.13"
 dependencies = [
     "langgraph>=1.2.0,<2",

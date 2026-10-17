@@ -1,4 +1,4 @@
-"""练习6：对比MemorySaver和SqliteSaver，并从历史检查点恢复。"""
+"""示例6：对比MemorySaver和SqliteSaver，并从历史检查点恢复。"""
 
 from __future__ import annotations
 
@@ -90,7 +90,7 @@ def run_sqlite_restore_demo(db_path: Path) -> dict:
 def main() -> None:
     run_memory_demo()
     run_sqlite_restore_demo(Path("bank_checkpoints.sqlite"))
-    print("练习6保存点类型与历史恢复全部通过。")
+    print("示例6保存点类型与历史恢复全部通过。")
 
 
 if __name__ == "__main__":

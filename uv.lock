@@ -52,7 +52,7 @@ wheels = [
 ]
 
 [[package]]
-name = "bankrs-day29-day30"
+name = "bankrs-persistence"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
